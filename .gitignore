@@ -1,1 +1,3 @@
 src/topologies/*
+*.out
+*DS_Store*

@@ -4,6 +4,7 @@
 
 typedef struct port
 {
+    int id;
     char *name;
     double bandwidth;
 } port;
@@ -37,7 +38,9 @@ void printConfig(config *conf);
 double getPortBandwidth(config *conf, char *portName);
 char *getNextHopPort(config *conf, int dest);
 
-int main()
+void freeConfig(config *conf);
+
+int main(int argc, char **argv)
 {
     config *conf = parseConfigFile("topologies/second_subgraph/1.yaml", 1);
 
@@ -46,6 +49,8 @@ int main()
     char *nextPort = getNextHopPort(conf, 11);
     printf("Next hop for dest node 11 is: %s\n", nextPort);
     printf("Looking for its BW: %f \n", getPortBandwidth(conf, nextPort));
+
+    freeConfig(conf);
 
     return 0;
 }
@@ -86,17 +91,20 @@ config *parseConfigFile(char *path, int id)
     config *conf = (config *)malloc(sizeof(config));
     conf->id = id;
 
-    // Open a file in read mode
     fptr = fopen(path, "r");
+    if (fptr == NULL)
+    {
+        fprintf(stderr, "Error opening file: %s\n", path);
+        exit(EXIT_FAILURE);
+    }
 
-    // for every line in the .yaml
     while ((read = getline(&line, &len, fptr)) != -1)
     {
         // this will run on "top level" segments i.e., ports, routing, type etc...
         if (line[0] != ' ')
         {
             getNameSegment(line, &currentSegment);
-            lineInSeg = -1;
+            lineInSeg = -1; // still on the top level line
         }
 
         // these will run for every line in that "top level segment"
@@ -142,13 +150,12 @@ config *parseConfigFile(char *path, int id)
             {
                 lineInSeg++; // skip to the first data line
                 lineInGroup = 0;
-                routes = (route *)malloc(1 * sizeof(route));
+                routes = (route *)malloc(0);
             }
             else
             {
                 if (lineInGroup == 0)
                 {
-                    // allocate memory for route
                     routes = realloc(routes, (currentGroup + 1) * sizeof(route));
 
                     /*
@@ -212,9 +219,9 @@ config *parseConfigFile(char *path, int id)
         }
     }
 
-    fclose(fptr); // done with the config file
+    fclose(fptr);
 
-    // populate the routing table using the 'bucket' list
+    // populate the routing table using the 'bucket' list data struct
 
     conf->routing = (route *)malloc(maxDestId * sizeof(route));
     conf->routingTableSize = maxDestId;
@@ -233,26 +240,27 @@ void getNameSegment(char *line, char **currentSegment)
     char *segName = (char *)malloc(colLoc);
     strncpy(segName, line, colLoc);
 
-    // free old segment
     if (*currentSegment == NULL)
         free(*currentSegment);
 
     *currentSegment = (char *)malloc(strlen(segName));
-    strcpy(*currentSegment, segName);
+    strncpy(*currentSegment, segName, strlen(segName));
+
+    free(segName);
 }
 
 void parsePort(char *line, port *portList, int curIndex)
 {
-
-    port *temp = (port *)malloc(sizeof(port));
+    port temp;
 
     int colPos = getColLocation(line);
     int start = getStartLocation(line);
 
-    // get port name
+    temp.id = curIndex;
 
-    temp->name = (char *)malloc(colPos - 2);
-    strncpy(temp->name, line + start, colPos - 2);
+    // get port name
+    temp.name = (char *)malloc(colPos - 2);
+    strncpy(temp.name, line + start, colPos - 2);
 
     // get port bw
     int bwStart = colPos + 2;                // skiping ": "
@@ -261,9 +269,9 @@ void parsePort(char *line, port *portList, int curIndex)
     char *bw = (char *)malloc(bwSize);
     strncpy(bw, line + bwStart, bwSize);
 
-    temp->bandwidth = strtod(bw, NULL);
+    temp.bandwidth = strtod(bw, NULL);
 
-    portList[curIndex] = *temp;
+    portList[curIndex] = temp;
 
     free(bw);
 }
@@ -292,7 +300,7 @@ void printConfig(config *conf)
     printf("\tPort list:\n");
     for (int i = 0; i < conf->numPorts; i++)
     {
-        printf("\t\t%s: %f\n", conf->ports[i].name, conf->ports[i].bandwidth);
+        printf("\t\tid: %d: %s | %f\n", conf->ports[i].id, conf->ports[i].name, conf->ports[i].bandwidth);
     }
     printf("\tRouting Table: \n");
     printf("\t\t%d records! showing first 5 that are not NULL...\n", conf->routingTableSize);
@@ -315,7 +323,6 @@ int getColLocation(char *s)
     {
         if (s[i] == ':')
         {
-
             colPos = i;
             break;
         }
@@ -334,4 +341,21 @@ int getStartLocation(char *s)
             break;
     }
     return start;
+}
+
+void freeConfig(config *conf)
+{
+    int cnt, i = 0;
+
+    for (int i = 0; i < conf->numPorts; i++)
+        free(conf->ports[i].name);
+
+    free(conf->ports);
+
+    for (i = 0; i < conf->routingTableSize; i++)
+        free(conf->routing[i].portName);
+
+    free(conf->routing);
+    free(conf->type);
+    free(conf);
 }
