@@ -1,0 +1,638 @@
+{
+    "nodeList": [
+        {
+            "id": 0,
+            "portList": [
+                {
+                    "id": "port0",
+                    "bw": 5000000000
+                },
+                {
+                    "id": "port1",
+                    "bw": 5000000000
+                },
+                {
+                    "id": "port2",
+                    "bw": 5000000000
+                },
+                {
+                    "id": "port3",
+                    "bw": 5000000000
+                }
+            ],
+            "deviceLevel": "core"
+        },
+        {
+            "id": 1,
+            "portList": [
+                {
+                    "id": "port0",
+                    "bw": 5000000000
+                },
+                {
+                    "id": "port1",
+                    "bw": 5000000000
+                },
+                {
+                    "id": "port2",
+                    "bw": 5000000000
+                },
+                {
+                    "id": "port3",
+                    "bw": 5000000000
+                }
+            ],
+            "deviceLevel": "core"
+        },
+        {
+            "id": 2,
+            "portList": [
+                {
+                    "id": "port0",
+                    "bw": 5000000000
+                },
+                {
+                    "id": "port1",
+                    "bw": 5000000000
+                },
+                {
+                    "id": "port2",
+                    "bw": 5000000000
+                },
+                {
+                    "id": "port3",
+                    "bw": 5000000000
+                }
+            ],
+            "deviceLevel": "core"
+        },
+        {
+            "id": 3,
+            "portList": [
+                {
+                    "id": "port0",
+                    "bw": 5000000000
+                },
+                {
+                    "id": "port1",
+                    "bw": 5000000000
+                },
+                {
+                    "id": "port2",
+                    "bw": 5000000000
+                },
+                {
+                    "id": "port3",
+                    "bw": 5000000000
+                }
+            ],
+            "deviceLevel": "core"
+        },
+        {
+            "id": 3,
+            "portList": [
+                {
+                    "id": "port0",
+                    "bw": 5000000000
+                },
+                {
+                    "id": "port1",
+                    "bw": 5000000000
+                },
+                {
+                    "id": "port2",
+                    "bw": 5000000000
+                },
+                {
+                    "id": "port3",
+                    "bw": 5000000000
+                }
+            ],
+            "deviceLevel": "aggregation"
+        },
+        {
+            "id": 4,
+            "portList": [
+                {
+                    "id": "port0",
+                    "bw": 5000000000
+                },
+                {
+                    "id": "port1",
+                    "bw": 5000000000
+                },
+                {
+                    "id": "port2",
+                    "bw": 5000000000
+                },
+                {
+                    "id": "port3",
+                    "bw": 5000000000
+                }
+            ],
+            "deviceLevel": "aggregation"
+        },
+        {
+            "id": 5,
+            "portList": [
+                {
+                    "id": "port0",
+                    "bw": 5000000000
+                },
+                {
+                    "id": "port1",
+                    "bw": 5000000000
+                },
+                {
+                    "id": "port2",
+                    "bw": 5000000000
+                },
+                {
+                    "id": "port3",
+                    "bw": 5000000000
+                }
+            ],
+            "deviceLevel": "aggregation"
+        },
+        {
+            "id": 6,
+            "portList": [
+                {
+                    "id": "port0",
+                    "bw": 5000000000
+                },
+                {
+                    "id": "port1",
+                    "bw": 5000000000
+                },
+                {
+                    "id": "port2",
+                    "bw": 5000000000
+                },
+                {
+                    "id": "port3",
+                    "bw": 5000000000
+                }
+            ],
+            "deviceLevel": "aggregation"
+        },
+        {
+            "id": 7,
+            "portList": [
+                {
+                    "id": "port0",
+                    "bw": 5000000000
+                },
+                {
+                    "id": "port1",
+                    "bw": 5000000000
+                },
+                {
+                    "id": "port2",
+                    "bw": 5000000000
+                },
+                {
+                    "id": "port3",
+                    "bw": 5000000000
+                }
+            ],
+            "deviceLevel": "aggregation"
+        },
+        {
+            "id": 8,
+            "portList": [
+                {
+                    "id": "port0",
+                    "bw": 5000000000
+                },
+                {
+                    "id": "port1",
+                    "bw": 5000000000
+                },
+                {
+                    "id": "port2",
+                    "bw": 5000000000
+                },
+                {
+                    "id": "port3",
+                    "bw": 5000000000
+                }
+            ],
+            "deviceLevel": "aggregation"
+        },
+        {
+            "id": 9,
+            "portList": [
+                {
+                    "id": "port0",
+                    "bw": 5000000000
+                },
+                {
+                    "id": "port1",
+                    "bw": 5000000000
+                },
+                {
+                    "id": "port2",
+                    "bw": 5000000000
+                },
+                {
+                    "id": "port3",
+                    "bw": 5000000000
+                }
+            ],
+            "deviceLevel": "aggregation"
+        },
+        {
+            "id": 10,
+            "portList": [
+                {
+                    "id": "port0",
+                    "bw": 5000000000
+                },
+                {
+                    "id": "port1",
+                    "bw": 5000000000
+                },
+                {
+                    "id": "port2",
+                    "bw": 5000000000
+                },
+                {
+                    "id": "port3",
+                    "bw": 5000000000
+                }
+            ],
+            "deviceLevel": "aggregation"
+        },
+        {
+            "id": 10,
+            "portList": [
+                {
+                    "id": "port0",
+                    "bw": 5000000000
+                },
+                {
+                    "id": "port1",
+                    "bw": 5000000000
+                },
+                {
+                    "id": "port2",
+                    "bw": 5000000000
+                },
+                {
+                    "id": "port3",
+                    "bw": 5000000000
+                }
+            ],
+            "deviceLevel": "access"
+        },
+        {
+            "id": 11,
+            "portList": [
+                {
+                    "id": "port0",
+                    "bw": 5000000000
+                },
+                {
+                    "id": "port1",
+                    "bw": 5000000000
+                },
+                {
+                    "id": "port2",
+                    "bw": 5000000000
+                },
+                {
+                    "id": "port3",
+                    "bw": 5000000000
+                }
+            ],
+            "deviceLevel": "access"
+        },
+        {
+            "id": 12,
+            "portList": [
+                {
+                    "id": "port0",
+                    "bw": 5000000000
+                },
+                {
+                    "id": "port1",
+                    "bw": 5000000000
+                },
+                {
+                    "id": "port2",
+                    "bw": 5000000000
+                },
+                {
+                    "id": "port3",
+                    "bw": 5000000000
+                }
+            ],
+            "deviceLevel": "access"
+        },
+        {
+            "id": 13,
+            "portList": [
+                {
+                    "id": "port0",
+                    "bw": 5000000000
+                },
+                {
+                    "id": "port1",
+                    "bw": 5000000000
+                },
+                {
+                    "id": "port2",
+                    "bw": 5000000000
+                },
+                {
+                    "id": "port3",
+                    "bw": 5000000000
+                }
+            ],
+            "deviceLevel": "access"
+        },
+        {
+            "id": 14,
+            "portList": [
+                {
+                    "id": "port0",
+                    "bw": 5000000000
+                },
+                {
+                    "id": "port1",
+                    "bw": 5000000000
+                },
+                {
+                    "id": "port2",
+                    "bw": 5000000000
+                },
+                {
+                    "id": "port3",
+                    "bw": 5000000000
+                }
+            ],
+            "deviceLevel": "access"
+        },
+        {
+            "id": 15,
+            "portList": [
+                {
+                    "id": "port0",
+                    "bw": 5000000000
+                },
+                {
+                    "id": "port1",
+                    "bw": 5000000000
+                },
+                {
+                    "id": "port2",
+                    "bw": 5000000000
+                },
+                {
+                    "id": "port3",
+                    "bw": 5000000000
+                }
+            ],
+            "deviceLevel": "access"
+        },
+        {
+            "id": 16,
+            "portList": [
+                {
+                    "id": "port0",
+                    "bw": 5000000000
+                },
+                {
+                    "id": "port1",
+                    "bw": 5000000000
+                },
+                {
+                    "id": "port2",
+                    "bw": 5000000000
+                },
+                {
+                    "id": "port3",
+                    "bw": 5000000000
+                }
+            ],
+            "deviceLevel": "access"
+        },
+        {
+            "id": 17,
+            "portList": [
+                {
+                    "id": "port0",
+                    "bw": 5000000000
+                },
+                {
+                    "id": "port1",
+                    "bw": 5000000000
+                },
+                {
+                    "id": "port2",
+                    "bw": 5000000000
+                },
+                {
+                    "id": "port3",
+                    "bw": 5000000000
+                }
+            ],
+            "deviceLevel": "access"
+        }
+    ],
+    "edgeList": [
+        {
+            "srcNode": 4,
+            "destNode": 0,
+            "srcPort": "port0",
+            "destPort": "port0"
+        },
+        {
+            "srcNode": 4,
+            "destNode": 1,
+            "srcPort": "port0",
+            "destPort": "port0"
+        },
+        {
+            "srcNode": 4,
+            "destNode": 11,
+            "srcPort": "port2",
+            "destPort": "port0"
+        },
+        {
+            "srcNode": 4,
+            "destNode": 15,
+            "srcPort": "port3",
+            "destPort": "port1"
+        },
+        {
+            "srcNode": 6,
+            "destNode": 2,
+            "srcPort": "port1",
+            "destPort": "port0"
+        },
+        {
+            "srcNode": 6,
+            "destNode": 3,
+            "srcPort": "port1",
+            "destPort": "port0"
+        },
+        {
+            "srcNode": 6,
+            "destNode": 11,
+            "srcPort": "port2",
+            "destPort": "port0"
+        },
+        {
+            "srcNode": 6,
+            "destNode": 15,
+            "srcPort": "port3",
+            "destPort": "port1"
+        },
+        {
+            "srcNode": 9,
+            "destNode": 0,
+            "srcPort": "port0",
+            "destPort": "port1"
+        },
+        {
+            "srcNode": 9,
+            "destNode": 1,
+            "srcPort": "port0",
+            "destPort": "port1"
+        },
+        {
+            "srcNode": 9,
+            "destNode": 10,
+            "srcPort": "port2",
+            "destPort": "port0"
+        },
+        {
+            "srcNode": 9,
+            "destNode": 17,
+            "srcPort": "port3",
+            "destPort": "port1"
+        },
+        {
+            "srcNode": 5,
+            "destNode": 2,
+            "srcPort": "port1",
+            "destPort": "port1"
+        },
+        {
+            "srcNode": 5,
+            "destNode": 3,
+            "srcPort": "port1",
+            "destPort": "port1"
+        },
+        {
+            "srcNode": 5,
+            "destNode": 10,
+            "srcPort": "port2",
+            "destPort": "port0"
+        },
+        {
+            "srcNode": 5,
+            "destNode": 17,
+            "srcPort": "port3",
+            "destPort": "port1"
+        },
+        {
+            "srcNode": 8,
+            "destNode": 0,
+            "srcPort": "port0",
+            "destPort": "port2"
+        },
+        {
+            "srcNode": 8,
+            "destNode": 1,
+            "srcPort": "port0",
+            "destPort": "port2"
+        },
+        {
+            "srcNode": 8,
+            "destNode": 13,
+            "srcPort": "port2",
+            "destPort": "port0"
+        },
+        {
+            "srcNode": 8,
+            "destNode": 14,
+            "srcPort": "port3",
+            "destPort": "port1"
+        },
+        {
+            "srcNode": 10,
+            "destNode": 2,
+            "srcPort": "port1",
+            "destPort": "port2"
+        },
+        {
+            "srcNode": 10,
+            "destNode": 3,
+            "srcPort": "port1",
+            "destPort": "port2"
+        },
+        {
+            "srcNode": 10,
+            "destNode": 13,
+            "srcPort": "port2",
+            "destPort": "port0"
+        },
+        {
+            "srcNode": 10,
+            "destNode": 14,
+            "srcPort": "port3",
+            "destPort": "port1"
+        },
+        {
+            "srcNode": 7,
+            "destNode": 0,
+            "srcPort": "port0",
+            "destPort": "port3"
+        },
+        {
+            "srcNode": 7,
+            "destNode": 1,
+            "srcPort": "port0",
+            "destPort": "port3"
+        },
+        {
+            "srcNode": 7,
+            "destNode": 12,
+            "srcPort": "port2",
+            "destPort": "port0"
+        },
+        {
+            "srcNode": 7,
+            "destNode": 16,
+            "srcPort": "port3",
+            "destPort": "port1"
+        },
+        {
+            "srcNode": 3,
+            "destNode": 2,
+            "srcPort": "port1",
+            "destPort": "port3"
+        },
+        {
+            "srcNode": 3,
+            "destNode": 3,
+            "srcPort": "port1",
+            "destPort": "port3"
+        },
+        {
+            "srcNode": 3,
+            "destNode": 12,
+            "srcPort": "port2",
+            "destPort": "port0"
+        },
+        {
+            "srcNode": 3,
+            "destNode": 16,
+            "srcPort": "port3",
+            "destPort": "port1"
+        }
+    ]
+}
