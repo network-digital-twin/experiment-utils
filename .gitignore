@@ -1,3 +1,4 @@
 src/topologies/*
 *.out
 *DS_Store*
+src/traces/*
